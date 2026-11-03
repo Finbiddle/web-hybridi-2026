@@ -1,5 +1,6 @@
 import React from "react";
-import { StyleSheet, Text, View, TouchableOpacity, SafeAreaView } from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
 
 interface HomeProps {
@@ -18,7 +19,7 @@ export default function Home({ onSelect }: HomeProps) {
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button} onPress={() => onSelect("hr")}>
-          <Text style={styles.buttonText}>WEEK 1:Heart Rate Limits</Text>
+          <Text style={styles.buttonText}>WEEK 1: Heart Rate Limits</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
