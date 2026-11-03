@@ -18,7 +18,7 @@ export default function App() {
           onPress={() => setActiveTab("currency")}
         >
           <Text style={[styles.menuText, activeTab === "currency" && styles.activeMenuText]}>
-            💱 Currency
+            DEMO: Currency
           </Text>
         </TouchableOpacity>
 
@@ -27,7 +27,7 @@ export default function App() {
           onPress={() => setActiveTab("hr")}
         >
           <Text style={[styles.menuText, activeTab === "hr" && styles.activeMenuText]}>
-            ❤️ HR Limits
+            WEEK 1: HR Limits
           </Text>
         </TouchableOpacity>
       </View>
