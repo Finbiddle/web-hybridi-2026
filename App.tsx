@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, TouchableOpacity, SafeAreaView } from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity, SafeAreaView, StatusBar as RNStatusBar, Platform } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import CurrencyCalculator from "./src/exercises/CurrencyCalculator";
 import HeartRateLimits from "./src/exercises/HeartRateLimits";
@@ -11,6 +11,7 @@ export default function App() {
     <SafeAreaView style={styles.safeArea}>
       <StatusBar style="auto" />
       
+
       <View style={styles.menuContainer}>
         <TouchableOpacity
           style={[styles.menuButton, activeTab === "currency" && styles.activeButton]}
@@ -31,6 +32,7 @@ export default function App() {
         </TouchableOpacity>
       </View>
 
+
       <View style={styles.contentArea}>
         {activeTab === "currency" && <CurrencyCalculator />}
         {activeTab === "hr" && <HeartRateLimits />}
@@ -43,6 +45,8 @@ const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
     backgroundColor: "#f5f5f5",
+
+    paddingTop: Platform.OS === "android" ? RNStatusBar.currentHeight : 0,
   },
   menuContainer: {
     flexDirection: "row",
