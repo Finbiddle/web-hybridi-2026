@@ -13,7 +13,7 @@ export default function HeartRateLimits({ onBack }: { onBack: () => void }) {
     <SafeAreaView style={styles.safeArea}>
       <StatusBar style="auto" />
       <View style={styles.container}>
-        <Button title="← Takaisin valikkoon" onPress={onBack} />
+        <Button title="BACK TO MENU" onPress={onBack} />
         <Text style={styles.heading}>Heart Rate Limits Calculator</Text>
         <Text style={styles.label}>Enter your age:</Text>
         <TextInput

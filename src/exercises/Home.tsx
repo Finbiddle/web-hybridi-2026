@@ -11,14 +11,14 @@ export default function Home({ onSelect }: HomeProps) {
     <SafeAreaView style={styles.safeArea}>
       <StatusBar style="auto" />
       <View style={styles.container}>
-        <Text style={styles.heading}>Valitse sovellus</Text>
+        <Text style={styles.heading}>Choose app</Text>
 
         <TouchableOpacity style={styles.button} onPress={() => onSelect("currency")}>
-          <Text style={styles.buttonText}>💱 Currency Calculator</Text>
+          <Text style={styles.buttonText}>DEMO: Currency Calculator</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button} onPress={() => onSelect("hr")}>
-          <Text style={styles.buttonText}>❤️ Heart Rate Limits</Text>
+          <Text style={styles.buttonText}>WEEK 1:Heart Rate Limits</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>

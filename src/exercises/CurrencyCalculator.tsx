@@ -12,7 +12,7 @@ export default function CurrencyCalculator({ onBack }: { onBack: () => void }) {
     <SafeAreaView style={styles.safeArea}>
       <StatusBar style="auto" />
       <View style={styles.container}>
-        <Button title="← Takaisin valikkoon" onPress={onBack} />
+        <Button title="BACK TO MENU" onPress={onBack} />
         <Text style={styles.heading}>Currency calculator</Text>
         <TextInput
           style={styles.input}
