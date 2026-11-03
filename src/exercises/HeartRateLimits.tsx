@@ -14,9 +14,7 @@ export default function HeartRateLimits({ onBack }: { onBack: () => void }) {
       <StatusBar style="auto" />
       <View style={styles.container}>
         <Button title="← Takaisin valikkoon" onPress={onBack} />
-
         <Text style={styles.heading}>Heart Rate Limits Calculator</Text>
-
         <Text style={styles.label}>Enter your age:</Text>
         <TextInput
           style={styles.input}
@@ -25,7 +23,6 @@ export default function HeartRateLimits({ onBack }: { onBack: () => void }) {
           onChangeText={setAge}
           placeholder="e.g. 20"
         />
-
         <Text style={styles.resultText}>Lower limit: {lowerLimit.toFixed(2)} bpm</Text>
         <Text style={styles.resultText}>Upper limit: {upperLimit.toFixed(2)} bpm</Text>
       </View>

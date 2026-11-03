@@ -26,32 +26,9 @@ export default function Home({ onSelect }: HomeProps) {
 }
 
 const styles = StyleSheet.create({
-  safeArea: {
-    flex: 1,
-    backgroundColor: "#fff",
-  },
-  container: {
-    flex: 1,
-    padding: 20,
-    justifyContent: "center",
-  },
-  heading: {
-    fontSize: 26,
-    fontWeight: "bold",
-    textAlign: "center",
-    marginBottom: 40,
-  },
-  button: {
-    backgroundColor: "#007AFF",
-    paddingVertical: 16,
-    paddingHorizontal: 24,
-    borderRadius: 12,
-    marginBottom: 16,
-    alignItems: "center",
-  },
-  buttonText: {
-    color: "#fff",
-    fontSize: 18,
-    fontWeight: "600",
-  },
+  safeArea: { flex: 1, backgroundColor: "#fff" },
+  container: { flex: 1, padding: 20, justifyContent: "center" },
+  heading: { fontSize: 26, fontWeight: "bold", textAlign: "center", marginBottom: 40 },
+  button: { backgroundColor: "#007AFF", paddingVertical: 16, paddingHorizontal: 24, borderRadius: 12, marginBottom: 16, alignItems: "center" },
+  buttonText: { color: "#fff", fontSize: 18, fontWeight: "600" },
 });

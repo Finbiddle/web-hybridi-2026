@@ -13,9 +13,7 @@ export default function CurrencyCalculator({ onBack }: { onBack: () => void }) {
       <StatusBar style="auto" />
       <View style={styles.container}>
         <Button title="← Takaisin valikkoon" onPress={onBack} />
-        
         <Text style={styles.heading}>Currency calculator</Text>
-        
         <TextInput
           style={styles.input}
           placeholder="€"
@@ -23,7 +21,6 @@ export default function CurrencyCalculator({ onBack }: { onBack: () => void }) {
           value={euros}
           onChangeText={setEuros}
         />
-
         <Text style={styles.text}>{pounds.toFixed(2)} £</Text>
       </View>
     </SafeAreaView>
